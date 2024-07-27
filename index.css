@@ -1,0 +1,89 @@
+:root {
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey-700: hsl(0, 0%, 20%);
+  --grey-800: hsl(0, 0%, 12%);
+  --grey-900: hsl(0, 0%, 8%);
+}
+
+body,
+html {
+  background-color: var(--grey-900);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+}
+
+.container {
+  background-color: var(--grey-800);
+  height: 540px;
+  width: 320px;
+  border-radius: 10px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0px 10px 0px;
+}
+
+.profile {
+  border-radius: 50%;
+  height: 80px;
+}
+
+.name {
+  color: var(--white);
+  margin: 0px;
+  font-weight: 700;
+  font-size: 22px;
+  padding-top: 20px;
+}
+
+.location {
+  color: var(--green);
+  margin: 0px;
+  font-weight: 600;
+  font-size: 12px;
+  padding-top: 10px;
+}
+
+.object {
+  color: var(--white);
+  margin: 0px;
+  font-weight: 400;
+  font-size: 12px;
+  padding-top: 20px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.buttons button {
+  background-color: var(--grey-700);
+  color: var(--white);
+  border: none;
+  border-radius: 7px;
+  width: 280px;
+  height: 40px;
+  font-weight: 600;
+}
+
+.github:hover {
+  background-color: var(--green);
+  color: var(--grey-900);
+}
+
+@media (max-width: 412px) {
+}
